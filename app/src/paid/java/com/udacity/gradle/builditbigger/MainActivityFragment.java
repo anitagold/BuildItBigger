@@ -6,10 +6,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 /**
- * A placeholder fragment containing a simple view.
- * Help on defining free and paid version in gradle and relevant activity/fragment:
+ * Good tutorial about defining free and paid version:
  * https://appsgit.com/create-product-flavor-android-gradle-freepaid-version-app/
  */
 public class MainActivityFragment extends Fragment {
@@ -22,7 +20,7 @@ public class MainActivityFragment extends Fragment {
                              Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
-        //there is no ad
+        //This is in the paid flavor of the app: there is no ad
 
         return root;
     }

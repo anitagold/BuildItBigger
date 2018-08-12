@@ -14,13 +14,16 @@ import com.google.api.server.spi.config.ApiNamespace;
                 packagePath = ""
         )
 )
+
 public class MyEndpoint {
 
     @ApiMethod(name = "tellJoke")
-    public MyBean tellJoke(MyBean joke) {
-        return joke;
+    public MyBean tellJoke() {
+        MyBean jokeBean = new MyBean(); //jokeBean contains jokeProvider
+        //String joke = "";
+
+        //joke = jokeBean.getGreatJoke();
+        return jokeBean;
     }
 
-
 }
-
